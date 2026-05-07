@@ -1,0 +1,17 @@
+graph ecu{
+nodesep=1.0;
+ranksep=1.5;
+node [shape=circle style=filled fillcolor=lightblue fontsize=9 width=1];
+edge [color=red fontsize=14];
+"Steering Control Unit"--"Engine Control Unit" [label= "cost:36406.1 delay:5"];
+"Brake Control Unit"--"Engine Control Unit" [label= "cost:36412.2 delay:10"];
+"ADAS Processing Unit"--"Engine Control Unit" [label= "cost:36412.2 delay:10"];
+"Battery Management System"--"Infotainment Control Unit" [label= "cost:36412.2 delay:10"];
+"Steering Control Unit"--"Infotainment Control Unit" [label= "cost:36412.2 delay:10"];
+"ADAS Processing Unit"--"Infotainment Control Unit" [label= "cost:36412.2 delay:10"];
+"Battery Management System"--"Infotainment Control Unit" [label= "cost:36418.3 delay:15"];
+"ADAS Processing Unit"--"Battery Management System" [label= "cost:36424.4 delay:20"];
+"Battery Management System"--"Engine Control Unit" [label= "cost:36430.5 delay:25"];
+"Infotainment Control Unit"--"Engine Control Unit" [label= "cost:36430.5 delay:25"];
+"Steering Control Unit"--"ADAS Processing Unit" [label= "cost:36430.5 delay:25"];
+}
